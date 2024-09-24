@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Syntax</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Basic Syntax</h1>
+        <h2>Variables</h2>
+        <p>In JavaScript, you can declare variables using <code>let</code>, <code>const</code>, and <code>var</code>.</p>
+        <pre>
+let name = 'Alice'; // let allows variable to be reassigned
+const age = 30; // const cannot be reassigned
+var city = 'Wonderland'; // var has function scope
+        </pre>
+
+        <h2>Interactive Code Snippet</h2>
+        <textarea id="code-editor" rows="5" cols="50">// Type your code here!</textarea>
+        <button onclick="runCode()">Run Code</button>
+        <pre id="output"></pre>
+
+        <script>
+            function runCode() {
+                const userCode = document.getElementById('code-editor').value;
+                try {
+                    const result = eval(userCode);
+                    document.getElementById('output').textContent = result;
+                } catch (error) {
+                    document.getElementById('output').textContent = 'Error: ' + error.message;
+                }
+            }
+        </script>
+        <a href="D:\HTML,CSS,BS,JavaScript Programs\JavaScript Basics\control-structures.html">Next: Control Structures</a>
+    </div>
+</body>
+</html>

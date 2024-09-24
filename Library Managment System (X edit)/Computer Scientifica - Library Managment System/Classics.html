@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <style>
+      /* Global styles */
+      body {
+          background-color: #e1dcc5;
+          font-family: "Trebuchet MS";
+          margin: 0;
+          padding: 0;
+      }
+
+      /* Header styles */
+      header {
+          background-color: #333;
+          color: #fff;
+          text-align: center;
+          padding: 10px;
+      }
+
+      /* Navigation styles */
+      nav {
+          background-color: #444;
+          color: #fff;
+          text-align: center;
+          padding: 10px;
+      }
+
+      nav a {
+          text-decoration: none;
+          color: #fff;
+          margin: 0 10px;
+      }
+
+      /* Content styles */
+      section {
+          padding: 20px;
+      }
+
+      /* Footer styles */
+      footer {
+          background-color: #333;
+          color: #fff;
+          text-align: center;
+          padding: 10px;
+      }
+
+      /* Book container styles */
+      .book-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+      }
+
+      .book {
+          width: 200px;
+          margin: 20px;
+          padding: 10px;
+          border: 1px solid #ccc;
+          text-align: center;
+      }
+
+      .book img {
+          width: 125px;
+          height: 200px;
+      }
+
+      .book h4 {
+          margin-top: 10px;
+      }
+
+      /* Blue button styles */
+      .blue-button {
+          background-color: #0074cc;
+          color: #fff;
+          padding: 10px 20px;
+          text-decoration: none;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+
+      .grey-button {
+          background-color: #4e4f50;
+          color: #fff;
+          padding: 10px 20px;
+          text-decoration: none;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+  </style>
+</head>
+<body>
+    <header>
+        <h1>Open Library</h1>
+    </header>
+    <nav>
+        <a href="file:///D:/HTML/Aura%20House%20Library%20Managment%20System.html">Home</a>
+        <a href="file:///D:/HTML/Avaliable_Books.html">Books</a>
+        <a href="file:///D:/HTML/Members.html">Members</a>
+        <a href="file:///D:/HTML/Borrowed_Books.html">Borrowed Books</a>
+        <a href="file:///D:/HTML/Online_Books.html">Online Books</a>
+        <a href="file:///D:/HTML/Feedback_Page.html">Send us Feedback</a>
+    </nav>
+    <div>
+      <ol>
+        <p>These are some of the famous books available at Open Library. Some famous books include -<BR>
+          'Pride and Prejudice', 'Shell Seekers', and 'Swallows and Amazons'<BR>
+          You can search which book you want through the search bar<br>
+          To borrow these books, you can contact us at the below contact.
+        </p>
+        <p>
+          <h2>Contact Details -</h2>
+          <p><b>&#9990; Contact Number:</b> +91 7019230627</p>
+          <p><b>@ Email Address:</b> vishodhan.ks@gmail.com, khspacey@gmail.com</p>
+      </p>
+      </ol>
+    </div>
+    <section>
+      <style>
+            
+        form {
+          background-color: #000;
+          width: 300px;
+          height: 44px;
+          border-radius: 5px;
+          display:flex;
+          flex-direction:row;
+          align-items:center;
+        }
+  
+        input {
+          all: unset;
+          font: 18px system-ui;
+          color: #fff;
+          height: 100%;
+          width: 100%;
+          padding: 6px 10px;
+        }
+  
+        ::placeholder {
+          color: #000;
+          opacity: 0.7; 
+        }
+  
+        svg {
+          color: #ffffff;
+          fill: currentColor;
+          width: 24px;
+          height: 24px;
+          padding: 10px;
+        }
+  
+        button {
+          all: unset;
+          cursor: pointer;
+          width: 44px;
+          height: 44px;
+        }
+      </style>
+      <div class="book-container">
+        <div class="book">
+            <img src="file:///D:/HTML Files/Moby-Dick.jpg" alt="Book 3">
+            <h4>Moby-Dick</h4>
+            <a href="https://archive.org/details/mobydickorwhale01melvuoft/page/n7/mode/2up" class="blue-button">Read</a>
+        </div>
+        <div class="book">
+            <img src="file:///D:/HTML Files/The Catcher in the rye.webp" alt="Book 3">
+            <h4>The Catcher in the Rye</h4>
+            <a href="https://archive.org/details/1_20191103_20191103_1326" class="blue-button">Read</a>
+        </div>
+        <div class="book">
+            <img src="file:///D:/HTML Files/In Cold Blood.jpg" alt="Book 3">
+            <h4>In Cold Blood</h4>
+            <a href="https://archive.org/details/incoldbloodtruea00capo_0" class="blue-button">Read</a>
+        </div>
+        <div class="book">
+            <img src="file:///D:/HTML Files/The Secret Garden.jpg" alt="Book 3">
+            <h4>The Secret Garden</h4>
+            <a href="https://archive.org/details/TheSecretGarden_201303" class="blue-button">Read</a>
+        </div>
+    </div>
+    </section>
+    <section>
+      <h2>Classics </h2>
+      <P>You can search your prefered book in the below search bar to check if they are avalible</P>
+        <style>
+            form {
+                       background-color: #000;
+                       width: 300px;
+                       height: 44px;
+                       border-radius: 5px;
+                       display:flex;
+                       flex-direction:row;
+                       align-items:center;
+                     }
+               
+                     input {
+                       all: unset;
+                       font: 18px system-ui;
+                       color: #fff;
+                       height: 100%;
+                       width: 100%;
+                       padding: 6px 10px;
+                     }
+               
+                     ::placeholder {
+                       color: #000;
+                       opacity: 0.7; 
+                     }
+               
+                     svg {
+                       color: #ffffff;
+                       fill: currentColor;
+                       width: 24px;
+                       height: 24px;
+                       padding: 10px;
+                     }
+               
+                     button {
+                       all: unset;
+                       cursor: pointer;
+                       width: 44px;
+                       height: 44px;
+                     }
+        html, body {
+         margin: 0;
+         padding: 0; 
+         }
+         #search {
+           background-color: #000;
+           width: 300px;
+           height: 44px;
+           border-radius: 5px;
+           display:flex;
+           flex-direction:row;
+           align-items:center;
+         }
+         #search label {
+         font-size: 24px;
+         font-weight: bold;
+         margin-right: 15px;
+         }
+         #searchInput {
+         display: inherit;
+         width: 100%;         
+         padding: 1em 1em;
+         }
+         </style>
+         <div id="container">
+            <div id="search">
+             <input id="searchInput" type="text" placeholder="Search" />
+            </div>
+            <ol >
+                <li class="name">Pride and Prejudice - Jane Austen</li>
+                <li class="name">To Kill a Mockingbird - Harper Lee</li>
+                <img src="file:///D:/HTML Files/A Tale of Two Cities.jpg" 
+                 border="3"
+                 align="right"
+                 alt="Pride and Prejudice"
+                 width="400"
+                 height="600">
+                <li class="name">The Great Gatsby - F. Scott Fitzgerald</li>
+                <li class="name">One Hundred Years of Solitude - Gabriel García Márquez</li>
+                <li class="name">In Cold Blood - Truman Capote</li>
+                <li class="name">Wide Sargasso Sea - Jean Rhys</li>
+                <li class="name">Brave New World - Aldous Huxley</li>
+                <li class="name">I Capture The Castle - Dodie Smith</li>
+                <li class="name">Jane Eyre - Charlotte Bronte</li>
+                <li class="name">Crime and Punishment - Fyodor Dostoevsky</li>
+                <li class="name">The Secret History - Donna Tartt</li>
+                <li class="name">The Call of the Wild - Jack London</li>
+                <li class="name">The Chrysalids - John Wyndham</li>
+                <li class="name">Moby-Dick - Herman Melville</li>
+                <li class="name">The Lion, the Witch and the Wardrobe - C.S. Lewis</li>
+                <li class="name">To the Lighthouse - Virginia Woolf</li>
+                <li class="name">The Death Of The Heart - Elizabeth Bowen</li>
+                <li class="name">Tess of D'Urbervilles - Thomas Hardy</li>
+                <li class="name">Frankenstein - Mary Shelley</li>
+                <li class="name">The Master and Margarita - Mikhail Bulgakov</li>
+                <li class="name">The Go-Between - L. P. Hartley</li>
+                <li class="name">One Flew Over the Cuckoo's Nest - Ken Kesey</li>
+                <li class="name">Buddenbrooks - Thomas Mann</li>
+                <li class="name">The Grapes of Wrath - John Steinbeck</li>
+                <li class="name">Beloved - Toni Morrison</li>
+                <li class="name">The Code Of The Woosters - P.G. Wodehouse</li>
+                <li class="name">Dracula - Bram Stoker</li>
+                <li class="name">The Lord Of The Rings: The Trilogy - J.R.R. Tolkien</li>
+                <li class="name">The Adventures of Huckleberry Finn - Mark Twain</li>
+                <li class="name">Great Expectations - Charles Dickens</li>
+                <li class="name">Catch-22 - Joseph Heller</li>
+                <li class="name">The Age of Innocence - Edith Wharton</li>
+                <li class="name">East of Eden by John Steinbeck</li>
+                <li class="name">The Brothers Karamazov by Fyodor Dostoyevsky</li>
+                <li class="name">Lolita by Vladimir Nabokov</li>
+                <li class="name">The Secret Garden by Frances Hodgson Burnett</li>
+                <li class="name">Scoop by Evelyn Waugh</li>
+                <li class="name">A Tale of Two Cities by Charles Dickens</li>
+                <li class="name">Diary of a Nobody by George Grossmith and Weedon Grossmith</li>
+                <li class="name">Anna Karenina by Leo Tolstoy</li>
+                <li class="name">The Betrothed by Alessandro Manzoni</li>
+                <li class="name">Orlando by Virginia Woolf</li>
+                <li class="name">Atlas Shrugged by Ayn Rand</li>
+                <li class="name">The Time Machine by H. G. Wells</li>
+                <li class="name">The Art of War by Sun-Tzu</li>
+                <li class="name">The Forsyte Saga by John Galsworthy</li>
+                <li class="name">Travels with Charley by John Steinbeck</li>
+                <li class="name">Tropic of Cancer by Henry Miller</li>
+                <li class="name">Women in Love by D. H. Lawrence</li>
+                <li class="name">Staying On by Paul Scott</li>
+                <li class="name">The Wind in the Willows by Kenneth Grahame</li>
+                <li class="name">War and Peace - Leo Tolstoy</li>
+                <li class="name">Great Expectations - Charles Dickens</li>
+                <li class="name">The Catcher in the Rye - J.D. Salinger</li>
+                <li class="name">The Brothers Karamazov by Fyodor Dostoyevsky</li>
+<li class="name">Lolita by Vladimir Nabokov</li>
+<li class="name">The Secret Garden by Frances Hodgson Burnett</li>
+<li class="name">Scoop by Evelyn Waugh</li>
+<li class="name">Diary of a Nobody by George Grossmith and Weedon Grossmith</li>
+<li class="name">Anna Karenina by Leo Tolstoy</li>
+<li class="name">The Betrothed by Alessandro Manzoni</li>
+<li class="name">Orlando by Virginia Woolf</li>
+<li class="name">Atlas Shrugged by Ayn Rand</li>
+<li class="name">The Time Machine by H. G. Wells</li>
+<li class="name">The Art of War by Sun-Tzu</li>
+<li class="name">The Forsyte Saga by John Galsworthy</li>
+<li class="name">Travels with Charley by John Steinbeck</li>
+<li class="name">Tropic of Cancer by Henry Miller</li>
+<li class="name">Women in Love by D. H. Lawrence</li>
+<li class="name">Staying On by Paul Scott</li>
+<li class="name">The Wind in the Willows by Kenneth Grahame</li>
+        </ol>
+      </div>
+      <script>
+        // get search bar element
+  const searchInput = document.getElementById("searchInput");
+  
+  // store name elements in array-like object
+  const namesFromDOM = document.getElementsByClassName("name");
+  
+  // listen for user events
+  searchInput.addEventListener("keyup", (event) => {
+    const { value } = event.target;
+  
+    // get user search input converted to lowercase
+    const searchQuery = value.toLowerCase();
+  
+    for (const nameElement of namesFromDOM) {
+      // store name text and convert to lowercase
+      let name = nameElement.textContent.toLowerCase();
+  
+      // compare current name to search input
+      if (name.includes(searchQuery)) {
+        // found name matching search, display it
+        nameElement.style.display = "block";
+      } else {
+        // no match, don't display name
+        nameElement.style.display = "none";
+      }
+    }
+  });
+  </script>
+      <script src="index.js"></script>
+         <footer>
+            &copy; 2023 Open Library
+            <!-- &copy means the Copyright symbol in HTML -->
+        </footer>
+    </body>
+    </html>

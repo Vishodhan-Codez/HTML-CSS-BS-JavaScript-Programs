@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <style>
+        /* Global styles */
+        body {
+            background-color: #e1dcc5;
+            font-family: "Trebuchet MS";
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 10px;
+        }
+
+        /* Content styles */
+        section {
+            padding: 20px;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Open Library</h1>
+    </header>
+    <nav>
+        <a href="file:///D:/HTML/Aura%20House%20Library%20Managment%20System.html">Home</a>
+        <a href="file:///D:/HTML/Avaliable_Books.html">Books</a>
+        <a href="file:///D:/HTML/Members.html">Members</a>
+        <a href="file:///D:/HTML/Borrowed_Books.html">Borrowed Books</a>
+        <a href="file:///D:/HTML/Online_Books.html">Online Books</a>
+        <a href="file:///D:/HTML/Feedback_Page.html">Send us Feedback</a>
+    </nav>
+    <!--These are the direction pages -->
+    <section>
+        <!-- This is the content of the page -->
+        <h2>Please provide us with your valuable Feedback</h2> <br>
+<div>
+  <form name="submit-to-google-sheet">
+    <label for="name">Name</label><br>
+    <textarea id="Name" name="Name" rows="2" cols="40" placeholder ="Your name..." required></textarea><br><br>
+
+    <label for="rating">How would you rate Open Library ??</label><br>
+    <input type="radio" name="Rating" value="Loved It (5-stars)">
+        <label>&#9733&#9733&#9733&#9733&#9733</label><br>
+        <input type="radio" name="Rating" value="Liked It (4-stars)">
+        <label>&#9733&#9733&#9733&#9733 </label><br>
+        <input type="radio" name="Rating" value="Was Average (3-stars)">
+        <label>&#9733&#9733&#9733</label><br>
+        <input type="radio" name="Rating" value="Was Bad (2-stars)">
+        <label>&#9733&#9733</label><br>
+        <input type="radio" name="Rating" value="Was Horrible (1-star)">
+        <label>&#9733 </label><br>
+        <br>
+
+    <label for="feedback">Please share us your valuable feedback: (Open-Ended)</label><br>
+    <textarea id="Feedback" name="Feedback" rows="8" cols="100" placeholder="Please share us your valuable feedback ..." ></textarea><br><br>
+  
+    <input type="submit" value="Submit" name="submit">
+  </form>
+</div>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbySXLlrBNhlkEYso4dxsLl-i3EHWiwaHt-9Oy69O1Dz7cOdqyOQw4zujrI-qktr4YIMKQ/exec';
+    const form = document.forms['submit-to-google-sheet'];
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          console.log('Success!', response);
+          // Add a pop-up notification for success
+          alert('Data has been successfully submitted.');
+        })
+        .catch(error => {
+          console.error('Error!', error.message);
+          // Add a pop-up notification for error
+          alert('An error occurred while submitting the data.');
+        });
+    });
+</script>
+</body>
+</html>

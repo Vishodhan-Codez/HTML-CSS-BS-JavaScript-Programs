@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate our Services</title>
+    <style>
+        /* Global styles */
+        body {
+            background-color: #e1dcc5;
+            font-family: "Courier New", monospace;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Content styles */
+        section {
+            padding: 20px;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        select {
+        width: 400px;
+      }
+
+      select option {
+        width: 400px;
+      }
+
+    </style>
+</head>
+<body>
+    <header>
+      <h1>National Public School, Yeshwantpur</h1>
+        <h2>Computer Scientifica (Classes 6-8)</h2>
+    </header>
+    <!--These are the direction pages -->
+    <section>
+        <!-- This is the content of the page -->
+        <h2>Please provide us with your valuable Feedback</h2> <br>
+<div>
+    
+  <form name="submit-to-google-sheet" action="file:///D:/HTML/Redirecting_Page.html" method="POST">
+    <label for="name">Name</label><br>
+    <textarea id="Name" name="Name" rows="2" cols="40" placeholder ="Your name..." required></textarea><br><br>
+        <label for="Exhibit">Choose the exhibit, That you wish to rate :</label><br><br>
+        <select name="Exhibit" id="Exhibit" cols="40" required>
+          <option name="Exhibit" value="Computer Malware and Security - Skit">Computer Malware and Security (Dance Drama /Skit)</option>
+          <option name="Exhibit" value="Library Managment System">Library Managment System (Website Creation)</option>
+          <option name="Exhibit" value="Obby">The Fun Obby (Obstacle Avoider)</option>
+          <option name="Exhibit" value="Evolution of Computers">Evolution of Computers - Depicting A Story</option>
+          <option name="Exhibit" value="Obsctacle Avoider">Robotics - Obsctacle Avoider</option>
+          <option name="Exhibit" value="Dhruv Face Expression Detector">Standard Face Expression Detector</option>
+          <option name="Exhibit" value="Pranav Deepface - Face Expression Detector">Deepface - Face Expression Detector</option>
+          <option name="Exhibit" value="Object Identifier">Object Identifier</option>
+          <option name="Exhibit" value="Krishay Smart Home">Smart Home</option>
+          <option name="Exhibit" value="Aditi Voice Assistant">Aditi ,Your Personal Voice Assistant</option>
+          <option name="Exhibit" value="Guess the Author">Guess the Author - Open Library</option>
+          <option name="Exhibit" value="Page Plummet">Page Plummet - Open Library</option>
+        </select><br><br>
+    <label for="rating">How would you rate the Exhibit ??</label><br>
+    <input type="radio" name="Rating" value="Loved It (5-stars)" required>
+        <label>&#9733&#9733&#9733&#9733&#9733</label><br>
+        <input type="radio" name="Rating" value="Liked It (4-stars)">
+        <label>&#9733&#9733&#9733&#9733 </label><br>
+        <input type="radio" name="Rating" value="Was Average (3-stars)">
+        <label>&#9733&#9733&#9733</label><br>
+        <input type="radio" name="Rating" value="Was Bad (2-stars)">
+        <label>&#9733&#9733</label><br>
+        <input type="radio" name="Rating" value="Was Horrible (1-star)" >
+        <label>&#9733 </label><br>
+        <br>
+
+    <label for="feedback">Please share us your valuable feedback: (Open-Ended)</label><br>
+    <textarea id="Feedback" name="Feedback" rows="8" cols="100" placeholder="Please share us your valuable feedback ..." required></textarea><br><br>
+  
+    <input type="submit" value="Submit" name="submit"/>
+  </form>
+</div>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby7sVCOzKiaKLj1kuozxH1XxiKC4t4cPy8cRK92XXbR_j-OPdcjjctRfOdEMvlPEGKh5g/exec';
+    const form = document.forms['submit-to-google-sheet'];
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          console.log('Success!', response);
+          // Add a pop-up notification for success
+          alert('Thank you for sending your feedback.It has been successfully sumbitted');
+        })
+        .catch(error => {
+          console.error('Error!', error.message);
+          // Add a pop-up notification for error
+          alert('An error occurred while submitting the data.');
+        });
+    });
+</script>
+</body>
+</html>

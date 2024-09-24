@@ -1,0 +1,211 @@
+<!---User 2 : Username: "Ramesh" Password: "Sample_Customer@123"-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramesh's Profile</title>
+    <style>
+        /* Global styles */
+        body {
+            background-color: #e1dcc5;
+            font-family: "Trebuchet MS";
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 10px;
+        }
+
+        /* Content styles */
+        section {
+            padding: 20px;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Profile card styles */
+        .profile-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+
+        /* Delete and Add button styles */
+        .delete-button, #add-row-button {
+            background-color: #4CAF50; /* Bright green */
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Table styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #333;
+            margin-top: 20px;
+        }
+
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        thead {
+            background-color: #444;
+            color: #fff;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        table, th, td { border : 1px solid black;
+                }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ramesh's Profile</h1>
+    </header>
+    <nav>
+        <a href="file:///D:/HTML/Aura%20House%20Library%20Managment%20System.html">Home</a>
+        <a href="file:///D:/HTML/Avaliable_Books.html">Books</a>
+        <a href="file:///D:/HTML/Members.html">Members</a>
+        <a href="file:///D:/HTML/Borrowed_Books.html">Borrowed Books</a>
+        <a href="file:///D:/HTML/Online_Books.html">Online Books</a>
+        <a href="file:///D:/HTML/Feedback_Page.html">Send us Feedback</a>
+    </nav>
+    <!--These are the direction pages -->
+    <section>
+            <div class="profile-card">
+                <img src="file:///D:/HTML Files/Ramesh.jpg" 
+                 border="2"
+                 align="right"
+                 alt="Ramesh"
+                 width="157"
+                 height="230">
+                <h2>Details</h2>
+                <p><b>Name:</b> Ramesh Sudeep </p>
+                <p><b>Screen Name/Username:</b> Ramesh</p>
+                <p><b>Email Address:</b> ramesh.s@gmail.com</p>
+                <p><b>Phone Number:</b> +91 9123456788</p>
+                <p><b>Password:</b>*******************</p>
+                </div>
+        <h1>  Hello Ramesh !</h1>
+        </section><h3> <ol> These are the books you currently have as due-<br>
+                       You have to deposit it to the library/call the staff and give your book on the day of deposition.<br>    You have already booked an extension<br></ol>
+        </h3>
+        <table id="due-books-table">
+            <caption><a href="#" style="color: rgb(0, 0, 0); font-weight: bold;">Books Due</a></caption>
+            <thead>
+                <tr>
+                    <th>Book Order</th>
+                    <th>Name of the book </th>
+                    <th>Authour</th>
+                    <th>Book No.</th>
+                    <th>Due Date</th>
+                    <th>Image</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td>Dune</td>
+                    <td> - Frank Herbert</td>
+                    <td>dI7O5</td>
+                    <td>29/September/2023</td>
+                    <td><Img src="file:///D:/HTML Files/Dune.jpg"  border="3"align="right" alt="Library Image" length="175" width="125"></td>
+                </tr><tr>
+                    <td>2.</td>
+                    <td>The Lion, the Witch and the Wardrobe</td>
+                    <td>- C.S. Lewis</td>
+                    <td>sT8U2</td>
+                    <td>29/September/2023</td>
+                    <td><Img src="file:///D:/HTML Files/The Lion,The Witch and the Wardrobe.jpg"  border="3"align="right" alt="Library Image" length="175" width="125"></td></td>
+                </tr><tr>
+                    <td>3.</td>
+                    <td>1984 </td>
+                    <td>- George Orwell</td>
+                    <td>rE3F7</td>
+                    <td>29/September/2023</td>
+                    <td><Img src="file:///D:/HTML Files/1984.jpg"  border="3"align="right" alt="Library Image" length="175" width="125"></td></td>
+                </tr><tr>
+                    <td>4.</td>
+                    <td>The Lord of the Rings - Book 1</td>
+                    <td>- J.R.R. Tolkien</td>
+                    <td>Xy6P4</td>
+                    <td>/September/2023</td>
+                    <td><Img src="file:///D:/HTML Files/The Lord of the Rings.jpg"  border="3"align="right" alt="Library Image" length="175" width="125"></td></td>
+                </tr><tr>
+                    <td>5.</td>
+                    <td>The Catcher in the Rye</td>
+                    <td>- J.D. Salinger</td>
+                    <td>bZ9A1</td>
+                    <td>11/November/2023</td>
+                    <td><Img src="file:///D:/HTML Files/The Catcher in the rye.webp"  border="3"align="right" alt="Library Image" length="175" width="125"></td></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <p><h5>*This Page can only be edited by the librarian. Please talk to them or contact us.<br>
+            For every day that has passed from the dew date '₹50/-' will be charged <br>
+            For booking a extension ,Please Contact Us .
+        </h5></p>
+        <br>
+    </section>
+<script>
+    // JavaScript to show a pop-up alert with the greeting
+    document.addEventListener('DOMContentLoaded', function() {
+        const greetingText = 'Hi, Ramesh';
+        alert(greetingText);
+    });
+</script>
+<!-- Your other pages can be added below this section if needed -->
+<footer>
+    &copy; 2023 Open Library
+</footer>
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shilpa's Profile</title>
+    <style>
+        /* Global styles */
+        body {
+            background-color: #e1dcc5;
+            font-family: "Trebuchet MS";
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 10px;
+        }
+
+        /* Content styles */
+        section {
+            padding: 20px;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Profile card styles */
+        .profile-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Delete and Add button styles */
+        .delete-button, #add-row-button, #save-changes-button {
+            background-color: #4CAF50; /* Bright green */
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* Table styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #333;
+            margin-top: 20px;
+        }
+
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        thead {
+            background-color: #444;
+            color: #fff;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shilpa's Profile</h1>
+        <nav>
+            <a href="file:///D:/HTML/Aura%20House%20Library%20Managment%20System.html">Home</a>
+            <a href="file:///D:/HTML/Avaliable_Books.html">Books</a>
+            <a href="file:///D:/HTML/Members.html">Members</a>
+            <a href="file:///D:/HTML/Online_Books.html">Online Books</a>
+            <a href="file:///D:/HTML/Feedback_Page.html">Send us Feedback</a>
+        </nav>
+    </header>
+    <section>
+        <div class="profile-card">
+            <img src="file:///D:/HTML Files/Shilpa.jpg" 
+                 border="2"
+                 align="right"
+                 alt="Shilpa"
+                 width="220"
+                 height="220">
+            <h2>Details</h2>
+            <p><b>Name:</b> Shilpa RP</p>
+            <p><b>Screen Name/Username:</b> Shilpa</p>
+            <p><b>Email Address:</b> Shilpa.rp@gmail.com</p>
+            <p><b>Phone Number:</b> +91 9376284743</p>
+            <p><b>Password:</b> **************</p>
+        </div>
+        <table id="books-table">
+            <caption><a href="#" style="color: rgb(0, 0, 0); font-weight: bold;">Books Due</a></caption>
+            <thead>
+                <tr>
+                    <th>No. of books borrowed</th>
+                    <th>Book Name/s</th>
+                    <th>Name of Book holder</th>
+                    <th>Phone Number of Book holder</th>
+                    <th>Due Date</th>
+                    <th>Book No.</th>
+                    <th>Extension?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2</td>
+                    <td>Middlemarch - George Eliot; The Martian - Andy Weir</td>
+                    <td>Ramu MN</td>
+                    <td>+91 9897362421</td>
+                    <td>30/September/23</td>
+                    <td>2eY13f,4wdhg5</td>
+                    <td>No</td>
+                </tr> <tr>
+                    <td>1</td>
+                    <td>The Secret Garden - Frances Hodgson Burnett</td>
+                    <td>Vihan KR</td>
+                    <td>+91 9827472670</td>
+                    <td>27/October/23</td>
+                    <td>uwdg4</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Gone with the Wind - Margaret Mitchell;
+                        The Grapes of Wrath - John Steinbeck;
+                        Watership Down - Richard Adams</td>
+                    <td>Siddharth R</td>
+                    <td>+91 9876543210</td>
+                    <td>01/October/23</td>
+                    <td>uO4Q9,
+                        zF7K3,
+                        cW8S5</td>
+                    <td>Yes</td>
+                </tr><tr>
+                    <td>2</td>
+                    <td>One Hundred Years of Solitude - Gabriel García Márquez;
+                        Crime and Punishment - Fyodor Dostoyevsky</td>
+                    <td>Priya RP</td>
+                    <td>+91 9876543210</td>
+                    <td>01/October/23</td>
+                    <td>pR3V6,
+                        iU9N2</td>
+                    <td>Yes</td>
+                </tr><tr>
+                    <td>2</td>
+                    <td>One Hundred Years of Solitude - Gabriel García Márquez;
+                        Crime and Punishment - Fyodor Dostoyevsky</td>
+                    <td>Neha P</td>
+                    <td>+91 9134567890</td>
+                    <td>01/October/23</td>
+                    <td>gD5W2,
+                        nC1V8</td>
+                    <td>No</td>
+                </tr><tr>
+                    <td>5</td>
+                    <td>Dune - Frank Herbert;
+                        The Lion, the Witch and the Wardrobe - C.S. Lewis;
+                        1984 - George Orwell;
+                        The Lord of the Rings - J.R.R. Tolkien;
+                        The Catcher in the Rye - J.D. Salinger</td>
+                    <td>Ramesh</td>
+                    <td>+91 9123456788</td>
+                    <td>29/September/2023</td>
+                    <td>dI7O5,
+                        sT8U2,
+                        rE3F7,
+                        Xy6P4,
+                        bZ9A1</td>
+                    <td>Yes</td>
+                </tr><tr>
+                    <td>4</td>
+                    <td>Pride and Prejudice - Jane Austen;
+                        The Great Gatsby - F. Scott Fitzgerald;
+                        To Kill a Mockingbird - Harper Lee;
+                        War and Peace - Leo Tolstoy</td>
+                    <td>Sneha TE</td>
+                    <td>+91 9789012345</td>
+                    <td>30/September/2023</td>
+                    <td>Lf4Z6,
+                        eG6Y8,
+                        jH2M9,
+                        Vw1N3</td>
+                    <td>No</td>
+                </tr><tr>
+                    <td>1</td>
+                    <td>Harry Potter and the Goblet of Fire - J.K. Rowling</td>
+                    <td>Jasmijn K</td>
+                    <td>+91 9009876543</td>
+                    <td>01/October/23</td>
+                    <td>tX5R1</td>
+                    <td>No</td>
+                </tr><tr>
+                    <td>1</td>
+                    <td>Mistborn: The Final Empire by Brandon Sanderson</td>
+                    <td>Charlotte S</td>
+                    <td>+91 9567890123</td>
+                    <td>2/October/2023</td>
+                    <td>Kp9Q2</td>
+                    <td>No</td>
+            </tr>
+            <!-- Add more rows as needed -->
+            <!-- ... (additional rows) ... -->
+        </tbody>
+        </table>
+        <br>
+        <!-- Add a button to add new rows -->
+        <button id="add-row-button">Add Row</button>
+        
+        <!-- Add a button to save changes -->
+        <button id="save-changes-button">Save Changes</button>
+    </section>
+    <script>
+        // JavaScript to add and delete rows
+        document.addEventListener('DOMContentLoaded', function () {
+            const addRowButton = document.getElementById('add-row-button');
+            const tableBody = document.querySelector('#books-table tbody');
+
+            // Add new row
+            addRowButton.addEventListener('click', function () {
+                const newRow = document.createElement('tr');
+                newRow.innerHTML = `
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">New Book</td>
+                    <td contenteditable="true">New Name</td>
+                    <td contenteditable="true">New Phone</td>
+                    <td contenteditable="true">New Date</td>
+                    <td contenteditable="true">New Book No.</td>
+                    <td contenteditable="true">No</td>
+                    <td><button class="delete-button">Delete</button></td>
+                `;
+                tableBody.appendChild(newRow);
+
+                // Add delete functionality to the new row
+                const deleteButtons = document.querySelectorAll('.delete-button');
+                deleteButtons.forEach(function (button) {
+                    button.addEventListener('click', function () {
+                        const row = this.closest('tr');
+                        if (row) {
+                            row.remove();
+                        }
+                    });
+                });
+            });
+
+            // Add delete functionality to existing rows
+            const deleteButtons = document.querySelectorAll('.delete-button');
+            deleteButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    const row = this.closest('tr');
+                    if (row) {
+                        row.remove();
+                    }
+                });
+            });
+
+            // Save changes button functionality (you can implement this)
+            const saveChangesButton = document.getElementById('save-changes-button');
+            saveChangesButton.addEventListener('click', function () {
+                // Implement the code to save changes here
+                alert('Changes saved!');
+            });
+        });
+    </script>
+</body>
+</html>

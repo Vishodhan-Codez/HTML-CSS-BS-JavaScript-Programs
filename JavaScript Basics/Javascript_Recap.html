@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to JavaScript Topics</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            color: #007BFF;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #0056b3;
+            margin-top: 20px;
+        }
+        pre {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 10px 0;
+        }
+        code {
+            background-color: #f8f9fa;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        p {
+            margin: 10px 0;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.8em;
+            text-align: center;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Introduction to JavaScript</h1>
+<p>JavaScript is a high-level, dynamic, untyped, and interpreted programming language. It is a core technology of the World Wide Web, alongside HTML and CSS, and enables interactive web pages. JavaScript is essential for creating web applications and can be used on both the client-side and server-side. Its versatility allows it to be used for various tasks, including web development, game development, mobile app development, and more.</p>
+
+<h1>Introduction to Functions in JavaScript</h1>
+<p>A function in JavaScript is a block of code designed to perform a particular task. It is executed when "called" (invoked). Functions can take parameters and return values.</p>
+<pre><code>function add(a, b) {
+    return a + b;
+}
+console.log(add(2, 3)); // Output: 5</code></pre>
+
+<h1>Introduction to Methods, Loops, and Switches in JavaScript</h1>
+<h2>Methods</h2>
+<p>Methods are functions that are associated with an object. They can be invoked using the dot notation.</p>
+<pre><code>let person = {
+    firstName: "John",
+    lastName: "Doe",
+    fullName: function() {
+        return this.firstName + " " + this.lastName;
+    }
+};
+console.log(person.fullName()); // Output: John Doe</code></pre>
+
+<h2>Loops</h2>
+<p>Loops are used to execute a block of code repeatedly. Common loop types include <code>for</code>, <code>while</code>, and <code>do...while</code>.</p>
+<pre><code>for (let i = 0; i < 5; i++) {
+    console.log(i); // Output: 0 1 2 3 4
+}</code></pre>
+
+<h2>Switches</h2>
+<p>The <code>switch</code> statement is used to perform different actions based on different conditions.</p>
+<pre><code>let day = 2;
+switch (day) {
+    case 1:
+        console.log("Monday");
+        break;
+    case 2:
+        console.log("Tuesday");
+        break;
+    default:
+        console.log("Another day");
+}</code></pre>
+
+<h1>Introduction to Objects in JavaScript</h1>
+<p>Objects are collections of properties, where each property is defined as a key-value pair. Objects can represent real-world entities.</p>
+<pre><code>let car = {
+    make: "Toyota",
+    model: "Camry",
+    year: 2021,
+    drive: function() {
+        console.log("Driving...");
+    }
+};
+car.drive(); // Output: Driving...</code></pre>
+
+<h1>Introduction to Array and Call Stack</h1>
+<h2>Arrays</h2>
+<p>An array is a data structure that can hold multiple values under a single variable name. Arrays can store elements of different types.</p>
+<pre><code>let fruits = ["apple", "banana", "cherry"];
+console.log(fruits[1]); // Output: banana</code></pre>
+
+<h2>Call Stack</h2>
+<p>The call stack is a mechanism for an interpreter (like JavaScript's) to keep track of function calls. It operates in a last-in, first-out (LIFO) manner.</p>
+<pre><code>function first() {
+    second();
+}
+function second() {
+    console.log("Hello from second!");
+}
+first(); // Output: Hello from second!</code></pre>
+
+<h1>Introduction to HTML DOM</h1>
+<p>The HTML Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a document as a tree of objects, allowing programming languages like JavaScript to manipulate the content and structure of web pages.</p>
+<pre><code>document.getElementById("myElement").innerHTML = "Hello World!";</code></pre>
+
+<footer>
+    <p>&copy; 2024 JavaScript Learning Resources</p>
+</footer>
+
+</body>
+</html>

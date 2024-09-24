@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Recap with Explanations</title>
+    <style>
+        /* Basic CSS Reset */
+        /* Remove default margin and padding from all elements */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* Ensures padding and border are included in element width/height */
+        }
+
+        /* Basic Styling for Body */
+        /* Set a background color, font, and line-height for better readability */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        /* Headings (h1, h2, h3) Styling */
+        /* Center-align headings and set their color */
+        h1, h2, h3 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        /* Paragraph (p) Styling */
+        /* Adjust font size and color for paragraphs */
+        p {
+            font-size: 18px;
+            color: #555;
+            margin: 15px 0;
+        }
+
+        /* Class Selector Example */
+        /* The '.highlight' class applies a background color and bold text */
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        /* ID Selector Example */
+        /* The '#intro' ID styles a specific section of the page */
+        #intro {
+            font-size: 20px;
+            color: darkblue;
+            padding: 15px;
+            border-left: 4px solid blue;
+            background-color: #e9f5ff;
+            margin-bottom: 20px;
+        }
+
+        /* Grouping Selectors Example */
+        /* Apply the same margin to multiple elements by grouping them */
+        h1, h2 {
+            margin-bottom: 10px;
+        }
+
+        /* Descendant Selector Example */
+        /* Selects paragraphs inside an article inside a div */
+        div article p {
+            font-size: 16px;
+            color: #333;
+        }
+
+        /* Pseudo-Class Selector Example */
+        /* Change the color and style of links when hovered over */
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        /* Pseudo-Element Selector Example */
+        /* Style the first letter of every paragraph */
+        p::first-letter {
+            font-size: 30px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Box Model Example */
+        /* Create a box with padding, border, and margin */
+        .box {
+            width: 200px;
+            padding: 20px;
+            border: 2px solid #555;
+            margin: 10px;
+            background-color: #f1f1f1;
+        }
+
+        /* Flexbox Example */
+        /* Create a flexible container with aligned items */
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Flex Items */
+        /* Style individual flex items within the flexbox */
+        .flex-item {
+            background-color: #ddd;
+            padding: 10px;
+            border: 2px solid #444;
+            text-align: center;
+        }
+
+        /* Grid Example */
+        /* Create a grid layout with 3 equal columns */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+
+        /* Grid Items */
+        /* Style individual items inside the grid */
+        .grid-item {
+            background-color: #c3c3c3;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid #666;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Title and Introduction -->
+    <h1>CSS Recap</h1>
+    <h2>A Quick Overview of CSS Concepts</h2>
+
+    <!-- ID Selector Example -->
+    <!-- An element with a specific ID can be styled uniquely -->
+    <p id="intro">
+        This is an introduction to CSS concepts with examples of common selectors and layout techniques like Flexbox and Grid.
+    </p>
+
+    <!-- Class Selector Example -->
+    <!-- The highlight class adds a yellow background to important text -->
+    <p>CSS allows you to add styles to <span class="highlight">HTML elements</span> using classes, IDs, and more.</p>
+
+    <!-- Grouping Selectors -->
+    <h3>Selectors in CSS</h3>
+
+    <!-- Descendant Selector Example -->
+    <!-- This section demonstrates selecting elements inside specific containers -->
+    <div>
+        <article>
+            <p>Descendant selectors allow you to target elements inside other elements. For example, this paragraph is inside an article and a div.</p>
+        </article>
+    </div>
+
+    <!-- Pseudo-Class Selector Example -->
+    <!-- This paragraph demonstrates the hover effect on links -->
+    <p>Hover over this <a href="#">link</a> to see a color change using the pseudo-class <code>:hover</code>.</p>
+
+    <!-- Pseudo-Element Selector Example -->
+    <!-- The first letter of this paragraph will be styled differently using ::first-letter -->
+    <p>This paragraph starts with a large first letter, thanks to the <code>::first-letter</code> pseudo-element selector.</p>
+
+    <!-- Box Model Example -->
+    <!-- Demonstrates padding, borders, and margins -->
+    <div class="box">
+        This is a box using padding, border, and margin. The box model in CSS defines how elements are sized and spaced.
+    </div>
+
+    <!-- Flexbox Example -->
+    <!-- A flex container with three items that are spaced out -->
+    <h3>Flexbox Layout</h3>
+    <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+
+    <!-- Grid Example -->
+    <!-- A grid container with three equal-width columns -->
+    <h3>Grid Layout</h3>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+    </div>
+
+</body>
+</html>

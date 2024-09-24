@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects and Arrays</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Objects and Arrays</h1>
+        <h2>Objects</h2>
+        <p>Objects store data as key-value pairs:</p>
+        <pre>
+const person = {
+    name: 'Alice',
+    age: 30
+}; // 'name' and 'age' are properties
+        </pre>
+
+        <h2>Arrays</h2>
+        <p>Arrays hold ordered lists of values:</p>
+        <pre>
+const fruits = ['Apple', 'Banana', 'Cherry']; // A list of fruits
+        </pre>
+
+        <h2>Challenge</h2>
+        <p>Add a new fruit to the array:</p>
+        <textarea id="array-editor" rows="5" cols="50">// Type your code here!</textarea>
+        <button onclick="runArrayCode()">Run Array Code</button>
+        <pre id="array-output"></pre>
+
+        <script>
+            function runArrayCode() {
+                const userCode = document.getElementById('array-editor').value;
+                try {
+                    eval(userCode);
+                    document.getElementById('array-output').textContent = 'Success! Fruit added.';
+                } catch (error) {
+                    document.getElementById('array-output').textContent = 'Error: ' + error.message;
+                }
+            }
+        </script>
+        <a href="D:\HTML,CSS,BS,JavaScript Programs\JavaScript Basics\dom-manipulation.html">Next: DOM Manipulation</a>
+    </div>
+</body>
+</html>

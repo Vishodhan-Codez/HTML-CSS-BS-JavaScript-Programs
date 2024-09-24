@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <style>
+      /* Global styles */
+      body {
+          background-color: #e1dcc5;
+          font-family: "Trebuchet MS";
+          margin: 0;
+          padding: 0;
+      }
+
+      /* Header styles */
+      header {
+          background-color: #333;
+          color: #fff;
+          text-align: center;
+          padding: 10px;
+      }
+
+      /* Navigation styles */
+      nav {
+          background-color: #444;
+          color: #fff;
+          text-align: center;
+          padding: 10px;
+      }
+
+      nav a {
+          text-decoration: none;
+          color: #fff;
+          margin: 0 10px;
+      }
+
+      /* Content styles */
+      section {
+          padding: 20px;
+      }
+
+      /* Footer styles */
+      footer {
+          background-color: #333;
+          color: #fff;
+          text-align: center;
+          padding: 10px;
+      }
+
+      /* Book container styles */
+      .book-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+      }
+
+      .book {
+          width: 200px;
+          margin: 20px;
+          padding: 10px;
+          border: 1px solid #ccc;
+          text-align: center;
+      }
+
+      .book img {
+          width: 125px;
+          height: 200px;
+      }
+
+      .book h4 {
+          margin-top: 10px;
+      }
+
+      /* Blue button styles */
+      .blue-button {
+          background-color: #0074cc;
+          color: #fff;
+          padding: 10px 20px;
+          text-decoration: none;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+
+      .grey-button {
+          background-color: #4e4f50;
+          color: #fff;
+          padding: 10px 20px;
+          text-decoration: none;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+  </style>
+</head>
+<body>
+    <header>
+        <h1>Open Library</h1>
+    </header>
+    <nav>
+        <a href="file:///D:/HTML/Aura%20House%20Library%20Managment%20System.html">Home</a>
+        <a href="file:///D:/HTML/Avaliable_Books.html">Books</a>
+        <a href="file:///D:/HTML/Members.html">Members</a>
+        <a href="file:///D:/HTML/Borrowed_Books.html">Borrowed Books</a>
+        <a href="file:///D:/HTML/Online_Books.html">Online Books</a>
+        <a href="file:///D:/HTML/Feedback_Page.html">Send us Feedback</a>
+    </nav>
+    <div>
+      <ol>
+        <p>These are some of the famous books avalible at Open Library . Some famous books inculde - <BR>
+            'Pride and Prejudice' ,'Shell Seekers' and 'Swallows and Amazons'<BR>
+            You can search which book you want through the search bar <br>
+            To borrow these books , you can contact us at the below contact 
+        </p>
+        <p>
+          <h2>Contact Details -</h2>
+          <p><b>&#9990; Contact Number:</b> +91 7019230627</p>
+          <p><b>@ Email Address:</b> vishodhan.ks@gmail.com, khspacey@gmail.com</p>
+      </p>
+      </ol>
+    </div>
+    <section>
+      <style>
+            
+        form {
+          background-color: #000;
+          width: 300px;
+          height: 44px;
+          border-radius: 5px;
+          display:flex;
+          flex-direction:row;
+          align-items:center;
+        }
+  
+        input {
+          all: unset;
+          font: 18px system-ui;
+          color: #fff;
+          height: 100%;
+          width: 100%;
+          padding: 6px 10px;
+        }
+  
+        ::placeholder {
+          color: #000;
+          opacity: 0.7; 
+        }
+  
+        svg {
+          color: #ffffff;
+          fill: currentColor;
+          width: 24px;
+          height: 24px;
+          padding: 10px;
+        }
+  
+        button {
+          all: unset;
+          cursor: pointer;
+          width: 44px;
+          height: 44px;
+        }
+      </style>
+      <div class="book-container">
+        <div class="book">
+            <img src="file:///D:/HTML Files/War and Peace.jpg" alt="Book 3">
+            <h4>War and Peace</h4>
+            <a href="https://archive.org/details/warandpeace030164mbp/page/138/mode/2up" class="blue-button">Read</a>
+        </div>
+        <div class="book">
+            <img src="file:///D:/HTML Files/David Copperfield.jpg" alt="Book 3">
+            <h4>David Copperfield</h4>
+            <a href="https://archive.org/details/davidcopperfield01dicke" class="blue-button">Read</a>
+        </div>
+        <div class="book">
+            <img src="file:///D:/HTML Files/One Hundred Years of Solitude.jpg" alt="Book 3">
+            <h4>One Hundred Years of Solitude</h4>
+            <a href="https://archive.org/details/OneHundredYearsOfSolitude_201710" class="blue-button">Read</a>
+        </div>
+        <div class="book">
+            <img src="file:///D:/HTML Files/Harry Potter and the Goblet of Fire.jpg" alt="Book 3">
+            <h4>Harry Potter and the Goblet of Fire </h4>
+            <a href="https://archive.org/details/harrypottergoble0000rowl_o3u1" class="blue-button">Read</a>
+        </div>
+    </div>
+    </section>
+    <section>
+      <h2>Famous Books</h2>
+      <P>You can search your prefered book in the below search bar to check if they are avalible</P>
+        <style>
+            form {
+                       background-color: #000;
+                       width: 300px;
+                       height: 44px;
+                       border-radius: 5px;
+                       display:flex;
+                       flex-direction:row;
+                       align-items:center;
+                     }
+               
+                     input {
+                       all: unset;
+                       font: 18px system-ui;
+                       color: #fff;
+                       height: 100%;
+                       width: 100%;
+                       padding: 6px 10px;
+                     }
+               
+                     ::placeholder {
+                       color: #000;
+                       opacity: 0.7; 
+                     }
+               
+                     svg {
+                       color: #ffffff;
+                       fill: currentColor;
+                       width: 24px;
+                       height: 24px;
+                       padding: 10px;
+                     }
+               
+                     button {
+                       all: unset;
+                       cursor: pointer;
+                       width: 44px;
+                       height: 44px;
+                     }
+        html, body {
+         margin: 0;
+         padding: 0; 
+         }
+         #search {
+           background-color: #000;
+           width: 300px;
+           height: 44px;
+           border-radius: 5px;
+           display:flex;
+           flex-direction:row;
+           align-items:center;
+         }
+         #search label {
+         font-size: 24px;
+         font-weight: bold;
+         margin-right: 15px;
+         }
+         #searchInput {
+         display: inherit;
+         width: 100%;         
+         padding: 1em 1em;
+         }
+         </style>
+         <div id="container">
+            <div id="search">
+             <input id="searchInput" type="text" placeholder="Search" />
+            </div>
+            <ol >
+              <!----Shuld We add Pictures ????-->
+      <li class="name">The Lord of the Rings - JRR Tolkien</li>
+      <li class="name">Pride and Prejudice - Jane Austen</li>
+      <img src="file:///D:/HTML Files/The Hobbit.jpg" 
+      border="3"
+      align="right"
+      alt="Pride and Prejudice"
+      width="400"
+      height="600">
+      <li class="name">His Dark Materials - Philip Pullman</li>
+      <li class="name">The Hitchhiker's Guide to the Galaxy - Douglas Adams</li>
+      <li class="name">Harry Potter and the Goblet of Fire - JK Rowling</li>
+      <li class="name">To Kill a Mockingbird - Harper Lee</li>
+      <li class="name">Winnie the Pooh - AA Milne</li>
+      <li class="name">Nineteen Eighty-Four - George Orwell</li>
+      <li class="name">The Lion, the Witch and the Wardrobe - CS Lewis</li>
+      <li class="name">Jane Eyre - Charlotte Brontë</li>
+      <li class="name">Catch-22 - Joseph Heller</li>
+      <li class="name">Wuthering Heights - Emily Brontë</li>
+      <li class="name">Birdsong - Sebastian Faulks</li>
+      <li class="name">Rebecca - Daphne du Maurier</li>
+      <li class="name">The Catcher in the Rye - JD Salinger</li>
+      <li class="name">The Wind in the Willows - Kenneth Grahame</li>
+      <li class="name">Great Expectations - Charles Dickens</li>
+      <li class="name">Little Women - Louisa May Alcott</li>
+      <li class="name">Captain Corelli's Mandolin - Louis de Bernieres</li>
+      <li class="name">War and Peace - Leo Tolstoy</li>
+      <li class="name">Gone with the Wind - Margaret Mitchell</li>
+      <li class="name">Harry Potter And The Philosopher's Stone - JK Rowling</li>
+      <li class="name">Harry Potter And The Chamber Of Secrets - JK Rowling</li>
+      <li class="name">Harry Potter And The Prisoner Of Azkaban - JK Rowling</li>
+      <li class="name">The Hobbit - JRR Tolkien</li>
+      <li class="name">Tess Of The D'Urbervilles - Thomas Hardy</li>
+      <li class="name">Middlemarch - George Eliot</li>
+      <li class="name">A Prayer For Owen Meany - John Irving</li>
+      <li class="name">The Grapes Of Wrath - John Steinbeck</li>
+      <li class="name">Alice's Adventures In Wonderland - Lewis Carroll</li>
+      <li class="name">The Story Of Tracy Beaker - Jacqueline Wilson</li>
+      <li class="name">One Hundred Years Of Solitude - Gabriel García Márquez</li>
+      <li class="name">The Pillars Of The Earth - Ken Follett</li>
+      <li class="name">David Copperfield - Charles Dickens</li>
+      <li class="name">Charlie And The Chocolate Factory - Roald Dahl</li>
+      <li class="name">Treasure Island - Robert Louis Stevenson</li>
+      <li class="name">A Town Like Alice - Nevil Shute</li>
+      <li class="name">Persuasion - Jane Austen</li>
+      <li class="name">Dune - Frank Herbert</li>
+      <li class="name">Emma - Jane Austen</li>
+      <img src="file:///D:/HTML Files/A Christmas Carol.jpg" 
+      border="3"
+      align="right"
+      alt="Pride and Prejudice"
+      width="400"
+      height="600">
+      <li class="name">Anne Of Green Gables - LM Montgomery</li>
+      <li class="name">Watership Down - Richard Adams</li>
+      <li class="name">The Great Gatsby - F Scott Fitzgerald</li>
+      <li class="name">The Count Of Monte Cristo - Alexandre Dumas</li>
+      <li class="name">Brideshead Revisited - Evelyn Waugh</li>
+      <li class="name">Animal Farm - George Orwell</li>
+      <li class="name">A Christmas Carol - Charles Dickens</li>
+      <li class="name">Far From The Madding Crowd - Thomas Hardy</li>
+      <li class="name">Goodnight Mister Tom - Michelle Magorian</li>
+      <li class="name">The Shell Seekers - Rosamunde Pilcher</li>
+      <li class="name">The Secret Garden - Frances Hodgson Burnett</li>
+      <li class="name">Of Mice And Men - John Steinbeck</li>
+      <li class="name">The Stand - Stephen King</li>
+      <li class="name">Anna Karenina - Leo Tolstoy</li>
+      <li class="name">A Suitable Boy - Vikram Seth</li>
+      <li class="name">The BFG - Roald Dahl</li>
+      <li class="name">Swallows And Amazons - Arthur Ransome</li>
+      <li class="name">Black Beauty - Anna Sewell</li>
+      <li class="name">Artemis Fowl - Eoin Colfer</li>
+      <li class="name">Crime And Punishment - Fyodor Dostoyevsky</li>
+      <li class="name">Noughts And Crosses - Malorie Blackman</li>
+      <li class="name">Memoirs Of A Geisha - Arthur Golden</li>
+      <li class="name">A Tale Of Two Cities - Charles Dickens</li>
+      <li class="name">The Thorn Birds - Colleen McCollough</li>
+      <li class="name">Mort - Terry Pratchett</li>
+      <li class="name">The Magic Faraway Tree - Enid Blyton</li>
+      <li class="name">The Magus - John Fowles</li>
+      <li class="name">Good Omens - Terry Pratchett and Neil Gaiman</li>
+      <li class="name">Gone Girl - Gillian Flynn</li>
+      <li class="name">The Shell Seekers - Rosamunde Pilcher</li>
+      <li class="name">Goodnight Mister Tom - Michelle Magorian</li>
+      <li class="name">The Secret Garden - Frances Hodgson Burnett</li>
+      <li class="name">Of Mice And Men - John Steinbeck</li>
+      <li class="name">The Stand - Stephen King</li>
+      <li class="name">Anna Karenina - Leo Tolstoy</li>
+      <li class="name">A Suitable Boy - Vikram Seth</li>
+      <li class="name">The BFG - Roald Dahl</li>
+      <li class="name">Swallows And Amazons - Arthur Ransome</li>
+      <li class="name">Black Beauty - Anna Sewell</li>
+      <li class="name">Artemis Fowl - Eoin Colfer</li>
+      <li class="name">Crime And Punishment - Fyodor Dostoyevsky</li>
+      <li class="name">Noughts And Crosses - Malorie Blackman</li>
+      <li class="name">Memoirs Of A Geisha - Arthur Golden</li>
+      <li class="name">A Tale Of Two Cities - Charles Dickens</li>
+      <li class="name">The Thorn Birds - Colleen McCollough</li>
+      <li class="name">Mort - Terry Pratchett</li>
+      <li class="name">The Magic Faraway Tree - Enid Blyton</li>
+      <li class="name">The Magus - John Fowles</li>
+      <li class="name">Good Omens - Terry Pratchett and Neil Gaiman</li>
+      <li class="name">Gone Girl - Gillian Flynn</li>
+      <li class="name">His Dark Materials - Philip Pullman</li>
+      </ol>
+      </div>
+      <script>
+        // get search bar element
+  const searchInput = document.getElementById("searchInput");
+  
+  // store name elements in array-like object
+  const namesFromDOM = document.getElementsByClassName("name");
+  
+  // listen for user events
+  searchInput.addEventListener("keyup", (event) => {
+    const { value } = event.target;
+  
+    // get user search input converted to lowercase
+    const searchQuery = value.toLowerCase();
+  
+    for (const nameElement of namesFromDOM) {
+      // store name text and convert to lowercase
+      let name = nameElement.textContent.toLowerCase();
+  
+      // compare current name to search input
+      if (name.includes(searchQuery)) {
+        // found name matching search, display it
+        nameElement.style.display = "block";
+      } else {
+        // no match, don't display name
+        nameElement.style.display = "none";
+      }
+    }
+  });
+  </script>
+      <script src="index.js"></script>
+         <footer>
+            &copy; 2023 Open Library
+            <!-- &copy means the Copyright symbol in HTML -->
+        </footer>
+    </body>
+    </html>
+         

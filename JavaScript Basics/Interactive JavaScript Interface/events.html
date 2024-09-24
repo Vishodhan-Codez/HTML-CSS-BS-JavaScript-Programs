@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Events</h1>
+        <p>Events are actions or occurrences that happen in the browser, such as clicks, key presses, or mouse movements.</p>
+
+        <h2>Handling Events</h2>
+        <p>Use event listeners to respond to user actions:</p>
+        <pre>
+document.getElementById('myButton').addEventListener('click', function() {
+    alert('Button clicked!'); // Action taken on button click
+});
+        </pre>
+
+        <button id="myButton">Click Me!</button>
+
+        <h2>Challenge</h2>
+        <p>Create a button that changes the background color when clicked:</p>
+        <button onclick="changeColor()">Change Background Color</button>
+
+        <script>
+            function changeColor() {
+                document.body.style.backgroundColor = 
+                    '#' + Math.floor(Math.random()*16777215).toString(16); // Random color
+            }
+        </script>
+        
+        <h2>Event Types</h2>
+        <ul>
+            <li><strong>Click</strong>: Triggered when an element is clicked.</li>
+            <li><strong>Mouseover</strong>: Triggered when the mouse hovers over an element.</li>
+            <li><strong>Keydown</strong>: Triggered when a key is pressed.</li>
+        </ul>
+
+        <a href="D:\HTML,CSS,BS,JavaScript Programs\JavaScript Basics\dom-manipulation.html">Previous: DOM Manipulation</a>
+        <a href="D:\HTML,CSS,BS,JavaScript Programs\JavaScript Basics\index.html">Home</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!---User: Username: "username" Password: "*******************"-->
+<!DOCTYPE html>
+<html>
+        <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        /* Global styles */
+        body {
+            background-color: #e1dcc5;
+            font-family: "Trebuchet MS";
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 10px;
+        }
+
+        /* Content styles */
+        section {
+            padding: 20px;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Profile card styles */
+        .profile-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+
+        /* Delete and Add button styles */
+        .delete-button, #add-row-button {
+            background-color: #4CAF50; /* Bright green */
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Table styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #333;
+            margin-top: 20px;
+        }
+
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        thead {
+            background-color: #444;
+            color: #fff;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        table, th, td { border : 1px solid black;
+                }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Profile</h1>
+    </header>
+    <nav>
+        <a href="file:///D:/HTML/Aura%20House%20Library%20Managment%20System.html">Home</a>
+        <a href="file:///D:/HTML/Avaliable_Books.html">Books</a>
+        <a href="file:///D:/HTML/Members.html">Members</a>
+        <a href="file:///D:/HTML/Borrowed_Books.html">Borrowed Books</a>
+        <a href="file:///D:/HTML/Online_Books.html">Online Books</a>
+        <a href="file:///D:/HTML/Feedback_Page.html">Send us Feedback</a>
+    </nav>
+    <!--These are the direction pages -->
+    <section>
+            <div class="profile-card">
+                <h2>Details</h2>
+                <p><b>Name:</b> <span id="name"></span></p>
+            <p><b>Screen Name/Username:</b> <span id="username"></span></p>
+            <p><b>Email Address:</b> <span id="email"></span></p>
+               <p><b>Phone Number:</b> <span id="phone"></span></p>
+               <p><b>Password:</b>*******************</p>
+                </div>
+    </section>
+            <h1 id="personName"> </h1>
+                    <h3>  These are the books you currently have as due-<br>
+                       You have to deposit it to the library/call the staff and give your book on that day.<br>
+    </h3>
+    <table id="due-books-table">
+        <caption><a href="#" style="color: rgb(0, 0, 0); font-weight: bold;">Books Due</a></caption>
+        <thead>
+            <tr>
+                <th>Book Order</th>
+                <th>Name of the book </th>
+                <th>Authour</th>
+                <th>Book No.</th>
+                <th>Due Date</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td >1.</td>
+                    <td id="dataA"></td>
+                                <td id="dataB"></td>
+                                <td  id="dataC"></td>
+                               <td id="dataD"></td>
+                </tr><tr>
+                   <td >2.</td>
+                     <td id="dataA2"></td>
+                                <td id="dataB2"></td>
+                                <td id="dataC2"></td>
+                               <td id="dataD2"></td>
+                </tr><tr>
+                   <td >3.</td>
+                    <td id="dataA3"></td>
+                                <td id="dataB3"></td>
+                                <td id="dataC3"></td>
+                               <td id="dataD3"></td>
+                </tr><tr>
+                   <td >4.</td>
+                   <td id="dataA4"></td>
+                                <td id="dataB4"></td>
+                                <td id="dataC4"></td>
+                               <td id="dataD4"></td>
+                 </tr><tr>
+                <td >5.</td>
+                     <td id="dataA5"></td>
+                                <td id="dataB5"></td>
+                                <td id="dataC5"></td>
+                               <td id="dataD5"></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <p><h5>*This Page can only be edited by the librarian. Please talk to them or contact us.For every day that has passed from the due date '₹50/-' will be charged as a fee 
+            For booking a extension ,Please Contact Us . Thank You for using our library
+        </h5></p>
+        <br>
+    </section>
+<script>
+    // JavaScript to show a pop-up alert with the greeting
+    document.addEventListener('DOMContentLoaded', function() {
+        const greetingText = 'Greetings User';
+        alert(greetingText);
+    });
+</script>
+<!-- Your other pages can be added below this section if needed -->
+<footer>
+    &copy; 2023 Open Library
+</footer>
+</body>
+</html>

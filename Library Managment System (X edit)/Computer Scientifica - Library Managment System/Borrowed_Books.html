@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <style>
+        /* Global styles */
+        body {
+            background-color: #e1dcc5;
+            font-family: "Trebuchet MS";
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 10px;
+        }
+
+        /* Content styles */
+        section {
+            padding: 20px;
+        }
+
+        /* Login form styles */
+        .container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 450px; /* Adjust the width of the container */
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+
+        .container h2 {
+            font-size: 24px;
+        }
+
+        label {
+            font-size: 18px;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        #showPassword {
+            margin-top: 10px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Open Library</h1>
+    </header>
+    <nav>
+        <a href="file:///D:/HTML/Aura%20House%20Library%20Managment%20System.html">Home</a>
+        <a href="file:///D:/HTML/Avaliable_Books.html">Books</a>
+        <a href="file:///D:/HTML/Members.html">Members</a>
+        <a href="file:///D:/HTML/Borrowed_Books.html">Borrowed Books</a>
+        <a href="file:///D:/HTML/Online_Books.html">Online Books</a>
+        <a href="file:///D:/HTML/Feedback_Page.html">Send us Feedback</a>
+    </nav>
+    <!--These are the direction pages -->
+    <section>
+        <!-- Your login page content can be placed here -->
+        <!---User 1 : Username: "Shilpa" Password: "Aura_House@123"-->
+             <!---User 2 : Username: "Ramesh" Password: "Sample_Customer@123"-->
+        <div class="container">
+            <h2>Library Login</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <input type="checkbox" id="showPassword"> Show Password<br><br>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <script>
+            const passwordField = document.getElementById("password");
+            const showPasswordCheckbox = document.getElementById("showPassword");
+
+            showPasswordCheckbox.addEventListener("change", function () {
+                if (showPasswordCheckbox.checked) {
+                    passwordField.type = "text";
+                } else {
+                    passwordField.type = "password";
+                }
+            });
+
+            document.getElementById("loginForm").addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                const username = document.getElementById("username").value;
+                const password = document.getElementById("password").value;
+              
+                // Check if the provided credentials match the allowed users
+                if (username === "Shilpa" && password === "fx7ZPRS933") {
+                    window.location.href = "file:///D:/HTML/Shilpa's%20page.html"; // Redirect to the specified website for Shilpa
+                } else if (username === "Ramesh" && password === "k0O60ACcOb") {
+                    window.location.href = "file:///D:/HTML/Ramesh's%20Page.html"; // Redirect to the specified website for Ramesh
+                } else {
+                    alert("Invalid username or password. Please try again.");
+                    // You can clear the input fields here.
+                }
+            });
+        </script>
+    </section>
+    <!-- Your other pages can be added below this section if needed -->
+    <footer>
+        &copy; 2023 Open Library
+    </footer>
+</body>
+</html>
